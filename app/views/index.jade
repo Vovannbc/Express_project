@@ -1,6 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  span This is my first page on express
+	h1= title
+	p This is a page for inserting new receipts
+	form
+		label Please enter title of your receipt
+		input(type=text, placeholder="receipt title")
+		label Please enter ingredients, separating by komma (,)
+		input(type=text, placeholder="ingredients")
